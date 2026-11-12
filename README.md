@@ -17,6 +17,22 @@ This is a binary classification where 1 means heart disease and 0 means no hear 
 - **Size:** 918 patients, 11 input columns and 1 target column
 - **File:** `data/heart.csv` (original, unmodified)
 
+| Column | Meaning |
+|---|---|
+| `age` | Age of the patient (years) |
+| `sex` | Sex of the patient (`M`: Male, `F`: Female) |
+| `chest_pain_type` | Chest pain type (`TA`: Typical Angina, `ATA`: Atypical Angina, `NAP`: Non-Anginal Pain, `ASY`: Asymptomatic) |
+| `resting_bp` | Resting blood pressure (mm Hg) |
+| `cholesterol` | Serum cholesterol (mm/dl) |
+| `fasting_bs` | Fasting blood sugar (`1`: if `fasting_bs` > 120 mg/dl, `0`: otherwise) |
+| `resting_ecg` | Resting electrocardiogram results (`Normal`: Normal, `ST`: having ST-T wave abnormality with T wave inversions and/or ST elevation or depression of > 0.05 mV, `LVH`: showing probable or definite left ventricular hypertrophy by Estes' criteria) |
+| `max_hr` | Maximum heart rate achieved (Numeric value between 60 and 202) |
+| `exercise_angina` | Exercise-induced angina (`Y`: Yes, `N`: No) |
+| `oldpeak` | Oldpeak = ST (Numeric value measured in depression) |
+| `st_slope` | The slope of the peak exercise ST segment (`Up`: upsloping, `Flat`: flat, `Down`: downsloping) |
+| `heart_disease` | Output class (`1`: heart disease, `0`: Normal) |
+
+
 ## EDA summary
 ## Modeling
 ## How to run locally
