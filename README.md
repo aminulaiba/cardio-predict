@@ -34,7 +34,12 @@ This is a binary classification where 1 means heart disease and 0 means no hear 
 
 
 ## EDA summary
+In the raw dataset, missing values in resting_bp (1 row) and cholesterol (172 rows) are recorded as 0, which is biologically impossible. To handle this properly, these zeros were converted to NaN so they can be imputed using the median from the training set without skewing the calculations.
+
 ## Modeling
+
+
+
 ## How to run locally
 ## How to run with Docker
 ## API usage example
