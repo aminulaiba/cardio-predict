@@ -34,7 +34,11 @@ This is a binary classification where 1 means heart disease and 0 means no hear 
 
 
 ## EDA summary
-In the raw dataset, missing values in resting_bp (1 row) and cholesterol (172 rows) are recorded as 0, which is biologically impossible. To handle this properly, these zeros were converted to NaN so they can be imputed using the median from the training set without skewing the calculations.
+**Data:** 918 patients, 11 features. 172 cholesterol and 1 resting BP values were 0 which is not possible, so fill them with the training-set median.
+**Target:** 55% heart disease, 45% healthy, so fairly balanced.
+**Numeric features:** patients with heart disease have lower max heart rate (128 vs 148), higher oldpeak (1.27 vs 0.41) and are older (56 vs 51). Cholesterol and oldpeak are right-skewed with outliers.
+**Categorical features:** exercise angina, chest pain type, ST slope and fasting blood sugar show the biggest differences in disease rate. Resting ECG shows little.
+**Correlation and importance:** ST slope, exercise angina, oldpeak and max heart rate rank highest in both correlation and mutual information, while resting ECG and resting BP rank lowest.
 
 ## Modeling
 
